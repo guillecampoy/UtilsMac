@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Otras dudas o ideas
+    url: https://github.com/guillecampoy/UtilsMac/discussions
+    about: Para consultas informales, feedback o ideas abiertas, usá la sección de Discussions.
