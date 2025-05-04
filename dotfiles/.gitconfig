@@ -1,0 +1,44 @@
+[alias]
+# Flujos básicos
+st = status
+co = checkout
+ci = commit
+br = branch
+df = diff
+lg = log --oneline --graph --decorate --all
+
+# Push a la rama actual automáticamente
+pushr = !git push origin $(git rev-parse --abbrev-ref HEAD)
+
+# Push a la rama actual y setea upstream si es la primera vez
+pushu = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+
+# Undo último commit (sin perder cambios)
+undo = reset --soft HEAD~1
+
+# Commit rápido con mensaje inline
+cm = !git commit -m
+
+# Pull rebase (sin merge feo, ideal para flujos limpios)
+plr = pull --rebase
+
+# Mostrar ramas ordenadas por último commit
+brr = branch --sort=-committerdate
+
+# Borrar rama local (simple)
+delbr = branch -d
+
+# Borrar rama remota
+delbr-remote = push origin --delete
+
+# Añadir todo y commit rápido
+ac = !git add . && git commit -m
+
+# Ver solo ramas locales
+brl = branch
+
+# Ver solo ramas remotas
+brrm = branch -r
+
+# Mostrar remotos
+rmt = remote -v

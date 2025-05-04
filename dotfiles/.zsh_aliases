@@ -1,0 +1,35 @@
+# shellcheck disable=SC2148
+# Navegación
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# Listados
+alias ll="ls -la"
+alias la="ls -A"
+alias l="ls -CF"
+
+# Limpiar
+alias cls="clear"
+
+# Actualizar sistema
+alias update="brew update && brew upgrade && brew cleanup"
+
+# Buscar procesos
+alias psg="ps aux | grep -i"
+
+# Monitoreo
+alias htop="htop"
+alias meminfo="vm_stat"
+
+# Servidor local rápido
+alias serve="python3 -m http.server"
+
+# Búsqueda rápida
+alias f="find . -name"
+
+# Árbol de directorios
+alias tree="tree -L 2"
+
+# Gestión de red
+alias myip="curl ifconfig.me"

@@ -1,0 +1,36 @@
+# Archivos de sistema Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de metadatos
+Icon?
+._*
+
+# Spotlight
+.Spotlight-V100
+.Trashes
+
+# Configuraciones de usuarios/mac
+*.swp
+*.swo
+*~
+
+# Copias de seguridad
+*.bak
+*.tmp
+
+# Archivos generados por la terminal
+Terminal Saved State/
+
+# Node.js (por si en el futuro agregás scripts en Node)
+node_modules/
+
+# Python (por si sumás scripts en Python también)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Brew Bundle Locks
+Brewfile.lock.json
