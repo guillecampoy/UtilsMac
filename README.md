@@ -33,5 +33,22 @@ Distribuido bajo la licencia [MIT](LICENSE).
 
 ---
 
-> **UtilsMac** nació entre terminales, scripts y buenos mates, para que cada equipo nuevo esté listo en minutos.  
->Código libre, espíritu libre. 🚀🧉
+## 🛠 Requisitos
+
+Este proyecto está pensado para quienes prefieren configurar y usar Git y su entorno de desarrollo desde la terminal.
+
+- 🧰 Requiere tener instalado:
+  - Git
+  - Zsh (recomendado sobre Bash)
+  - GitHub CLI (`gh`) → para aprovechar los comandos personalizados opcionales
+
+### 📦 Instalación del GitHub CLI
+
+Si no tenés `gh` instalado, podés instalarlo en MacOS vía Homebrew:
+
+```bash
+brew install gh
+```
+
+>**UtilsMac** nació entre terminales, scripts y buenos mates, para que cada equipo nuevo esté listo en minutos.  
+Código libre, espíritu libre. 🚀🧉

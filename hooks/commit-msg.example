@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Hook para validar que los commits comiencen con un tipo estándar
+# Compatible con convenciones como:
+# add:, fix:, update:, docs:, refactor:, chore:
+
+msg=$(cat "$1")
+
+if ! echo "$msg" | grep -Eq "^(add|fix|update|docs|refactor|chore): .+"; then
+  echo "❌ Error: El mensaje de commit debe comenzar con un tipo válido (add:, fix:, update:, etc.)"
+  echo "📌 Ejemplo válido: add: agrega script de desinstalación"
+  exit 1
+fi
