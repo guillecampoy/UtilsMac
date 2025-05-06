@@ -22,3 +22,14 @@ Por favor, seguí estas pautas para mantener el proyecto claro, funcional y bien
 2. **Crea una nueva rama** para tu cambio.
    ```bash
    git checkout -b nombre-de-tu-rama
+
+### 🧉 Sobre el uso de Git
+
+Este proyecto está pensado para quienes trabajan desde consola, con Git puro.
+
+Si usas herramientas vizuales, reforzamos algunas normas:
+- Está bien, mientras respetes el formato de commits (`add:`, `fix:`, etc.)
+- Mantené los PRs simples y atómicos
+- Asegurate de seguir las plantillas al abrir Issues y PRs
+
+En resumen: usá lo que quieras, pero hacelo prolijo 😉
