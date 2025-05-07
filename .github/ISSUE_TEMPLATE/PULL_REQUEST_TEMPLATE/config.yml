@@ -1,0 +1,3 @@
+pulls:
+  use_multiple_templates: true
+  default_template: minor_change.md

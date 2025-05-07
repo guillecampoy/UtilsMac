@@ -41,6 +41,14 @@ Formato recomendado (pero no obligatorio):
 - `fix: error al desinstalar apps con espacios`
 - `update: instalación de powerlevel10k en setup_mac.sh`
 
+### 🛡️ Validación opcional de commits
+
+Si querés usar validación automática de mensajes de commit localmente:
+
+```bash
+cp hooks/commit-msg.example .git/hooks/commit-msg
+chmod +x .git/hooks/commit-msg
+```
 
 ### 🧉 Sobre el uso de Git
 
