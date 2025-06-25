@@ -24,7 +24,9 @@ BUNDLE_ID=$(mdls -name kMDItemCFBundleIdentifier -raw "$APP_PATH")
 if [ "$BUNDLE_ID" == "(null)" ] || [ -z "$BUNDLE_ID" ]; then
     echo "No se pudo detectar automáticamente el Bundle ID."
     echo "Usando nombre de la app como aproximación."
-    BUNDLE_ID="com.${APP_NAME,,}" # nombre minúscula
+    # Bash 3.x (por defecto en macOS) no soporta la expansión "${var,,}".
+    # Utilizamos tr para convertir el nombre a minúsculas de forma compatible.
+    BUNDLE_ID="com.$(echo "$APP_NAME" | tr '[:upper:]' '[:lower:]')"
 fi
 
 echo "Desinstalando $APP_NAME..."
