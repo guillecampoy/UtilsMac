@@ -1,7 +1,7 @@
 # 🛠️ UtilsMac
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Colección personal de **scripts**, **dotfiles** y **configuraciones** para instalar, configurar y mantener un Mac de manera rápida y profesional.  
+Colección personal de **scripts**, **dotfiles** y **configuraciones** para preparar equipos Mac y Linux de manera rápida y profesional.
 Ideal para **reinstalaciones limpias**, **nuevos equipos** o simplemente para mejorar tu flujo de trabajo diario.
 
 ---
@@ -24,7 +24,21 @@ Ideal para **reinstalaciones limpias**, **nuevos equipos** o simplemente para me
 
 ```bash
 git clone https://github.com/guillecampoy/UtilsMac.git
-cd UtilsMac/scripts 
+cd UtilsMac
+```
+
+### 2. MacOS
+
+```bash
+cd scripts
+./setup_mac.sh
+```
+
+### 3. Pop!_OS (o derivados Debian)
+
+```bash
+cd scripts
+./setup_linux.sh
 ```
 
 ## 📄 Licencia
@@ -49,6 +63,12 @@ Si no tenés `gh` instalado, podés instalarlo en MacOS vía Homebrew:
 ```bash
 brew install gh
 ```
+
+## ✏️ Editor por defecto
+
+El setup fija **VSCode** como editor general del sistema. Para Git se mantiene
+un editor de consola (nano), por lo que al editar un commit se abrirá en la
+terminal.
 
 >**UtilsMac** nació entre terminales, scripts y buenos mates, para que cada equipo nuevo esté listo en minutos.  
 Código libre, espíritu libre. 🚀🧉
